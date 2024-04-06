@@ -13,7 +13,7 @@ public class canvasManager : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown("escape"))
+        if (Input.GetKeyDown(KeyCode.Escape))
         {
             isPaused = !isPaused;
             if (isPaused)
@@ -28,7 +28,7 @@ public class canvasManager : MonoBehaviour
             }
         }
 
-        if(Input.GetKeyDown("i"))
+        if(Input.GetKeyDown(KeyCode.I))
         {
             if(!isPaused)
             {

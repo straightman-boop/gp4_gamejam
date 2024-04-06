@@ -5,8 +5,26 @@ using UnityEngine.SceneManagement;
 
 public class loadScene : MonoBehaviour
 {
-    public void loadSceneFunc(string sceneName)
+    public GameObject optionsUI;
+
+    public void loadSceneFunction(string sceneName)
     {
         SceneManager.LoadScene(sceneName);
     }
+
+    public void quitFunction()
+    {
+        Debug.Log("Quit");
+        Application.Quit();
+    }
+
+    public void openOptions()
+    {
+       optionsUI.SetActive(true);
+    }
+    public void closeOptions()
+    {
+        optionsUI.SetActive(false);
+    }
+
 }
