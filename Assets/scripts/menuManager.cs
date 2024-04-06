@@ -5,14 +5,13 @@ using UnityEngine;
 public static class menuManager
 {
     public static bool isInitialised { get; private set; }
-    public static GameObject youLose, youWin, settingsMenu, mainMenu,containers, inventory;
+    public static GameObject youLose, youWin, settingsMenu,containers, inventory;
     public static void Init()
     {//match case
         GameObject canvas = GameObject.Find("Canvas");
         youLose = canvas.transform.Find("You Lose").gameObject;
         settingsMenu = canvas.transform.Find("Settings").gameObject;
         youWin = canvas.transform.Find("You Win").gameObject;
-        mainMenu = canvas.transform.Find("Main Menu").gameObject;
         containers = canvas.transform.Find("Containers").gameObject;
         inventory = canvas.transform.Find("Inventory").gameObject;
 
@@ -34,9 +33,6 @@ public static class menuManager
                 break;
             case menuList.YOU_WIN:
                 youWin.SetActive(true);
-                break;
-            case menuList.MAIN_MENU: 
-                mainMenu.SetActive(true);
                 break;
             case menuList.INVENTORY: 
                 inventory.SetActive(true); 
