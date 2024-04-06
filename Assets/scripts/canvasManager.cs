@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class canvasManager : MonoBehaviour
 {
-    private bool isPaused = false;
-    private bool isInventory = false;
-    private void Start()
+    public bool isPaused = false;
+    public bool isInventory = false;
+    private void Awake()
     {
         menuManager.Init();
     }
@@ -15,11 +15,14 @@ public class canvasManager : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Escape))
         {
+            Debug.Log("GOT IN.");
+
             isPaused = !isPaused;
             if (isPaused)
             {
+                menuManager.openMenu(menuList.SETTINGS, null);
+                Debug.Log(menuManager.settingsMenu);
                 Time.timeScale = 0;
-                menuManager.settingsMenu.SetActive(true);
             }
             else
             {
