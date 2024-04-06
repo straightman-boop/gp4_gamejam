@@ -6,5 +6,8 @@ public enum menuList
 {
     MAIN_MENU,
     SETTINGS,
-    INVENTORY
+    INVENTORY,
+    CONTAINERS,
+    YOU_LOSE,
+    YOU_WIN
 }
