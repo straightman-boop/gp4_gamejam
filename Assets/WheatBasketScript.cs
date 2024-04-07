@@ -17,8 +17,8 @@ public class WheatBasketScript : MonoBehaviour
 
     private void Update()
     {
-        Debug.Log(GameManagerScript.gamemanager.wheat.text);
-        Debug.Log(int.Parse(GameManagerScript.gamemanager.wheat.text));
+        //Debug.Log(GameManagerScript.gamemanager.wheat.text);
+        //Debug.Log(int.Parse(GameManagerScript.gamemanager.wheat.text));
 
 
         if (Input.GetKeyDown(KeyCode.E) && entered == true)
@@ -27,7 +27,7 @@ public class WheatBasketScript : MonoBehaviour
             if (int.Parse(GameManagerScript.gamemanager.wheat.text) > 0)
             {
                 Debug.Log("ENTERED!");
-                GameManagerScript.gamemanager.wheatBasket = int.Parse(GameManagerScript.gamemanager.wheat.text);
+                GameManagerScript.gamemanager.wheatBasket += int.Parse(GameManagerScript.gamemanager.wheat.text);
                 GameManagerScript.gamemanager.wheat.text = "0";
             }
 

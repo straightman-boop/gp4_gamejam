@@ -16,8 +16,8 @@ public class BerriesBasketScript : MonoBehaviour
 
     private void Update()
     {
-        Debug.Log(GameManagerScript.gamemanager.berries.text);
-        Debug.Log(int.Parse(GameManagerScript.gamemanager.berries.text));
+        //Debug.Log(GameManagerScript.gamemanager.berries.text);
+        //Debug.Log(int.Parse(GameManagerScript.gamemanager.berries.text));
 
 
         if (Input.GetKeyDown(KeyCode.E) && entered == true)
@@ -26,7 +26,7 @@ public class BerriesBasketScript : MonoBehaviour
             if (int.Parse(GameManagerScript.gamemanager.berries.text) > 0)
             {
                 Debug.Log("ENTERED!");
-                GameManagerScript.gamemanager.berriesBasket = int.Parse(GameManagerScript.gamemanager.berries.text);
+                GameManagerScript.gamemanager.berriesBasket += int.Parse(GameManagerScript.gamemanager.berries.text);
                 GameManagerScript.gamemanager.berries.text = "0";
             }
 

@@ -37,12 +37,18 @@ public class PlayerStatsScript : MonoBehaviour
     void Update()
     {
         UpdateLife();
+
+
+        if (playerLife <= 0)
+        {
+            GameManagerScript.gamemanager.winCond = 2;
+        }
     }
 
     void UpdateLife()
     {
         if (playerLife > maxLife)
-        {
+        {          
             playerLife = maxLife;
         }
 
