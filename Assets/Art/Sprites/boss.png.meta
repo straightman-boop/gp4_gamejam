@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 6b5832f763c935242a9df76131f2ec02
+guid: 8d64cdceb3a72d241be6ebafe8cc53fa
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -81,6 +81,19 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
     buildTarget: Standalone
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -106,24 +119,11 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: bat_0
+      name: boss_0
       rect:
         serializedVersion: 2
         x: 0
@@ -137,14 +137,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 31a7ae35e68d93d449825113552c64d5
-      internalID: 560193736
+      spriteID: 88951b23a8e466e429de4fe9c1240221
+      internalID: 201514068
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bat_1
+      name: boss_1
       rect:
         serializedVersion: 2
         x: 64
@@ -158,14 +158,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 860d5ab3c38668c449ba4f2a0754565b
-      internalID: -1897176640
+      spriteID: 26a0d59a9db10a54ebef86d4dd5c7884
+      internalID: -1208443400
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bat_2
+      name: boss_2
       rect:
         serializedVersion: 2
         x: 0
@@ -179,14 +179,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 580e54d2e7bc44e4b9d13551f5bde540
-      internalID: 233507415
+      spriteID: 3102b6b1e1116814abef06c6e4bf5e66
+      internalID: -1621608595
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bat_3
+      name: boss_3
       rect:
         serializedVersion: 2
         x: 64
@@ -200,14 +200,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2675b1f5fddc58445abb1a37431db1af
-      internalID: -1783112768
+      spriteID: ac1330b349841dd4cbb80068d558b572
+      internalID: -790623065
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bat_4
+      name: boss_4
       rect:
         serializedVersion: 2
         x: 0
@@ -221,8 +221,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: be1624e7e4dd4a1429622a7a50e53e7d
-      internalID: -1825199306
+      spriteID: e5e64b81421843f4482d6617b0296387
+      internalID: 1067294189
       vertices: []
       indices: 
       edges: []
@@ -238,11 +238,11 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      bat_0: 560193736
-      bat_1: -1897176640
-      bat_2: 233507415
-      bat_3: -1783112768
-      bat_4: -1825199306
+      boss_0: 201514068
+      boss_1: -1208443400
+      boss_2: -1621608595
+      boss_3: -790623065
+      boss_4: 1067294189
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
