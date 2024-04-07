@@ -50,6 +50,10 @@ public class FoodScript : MonoBehaviour
             transform.position = foodSpawner.transform.position;
             timerDone = false;
             timer = duration;
+
+            int chance = Random.Range(0, sprites.Length);
+
+            spriteRenderer.sprite = sprites[chance];
         }
 
     }
