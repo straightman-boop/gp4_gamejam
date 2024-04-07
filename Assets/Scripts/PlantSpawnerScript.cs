@@ -55,7 +55,7 @@ public class PlantSpawnerScript : MonoBehaviour
     {
         for (int i = 0; i < numberOfBlocks; i++)
         {
-            Debug.Log(i);
+            //Debug.Log(i);
             float spawnXPosition = Random.Range(xPosMin, xPosMax);
             float spawnYPosition = Random.Range(yPosMin, yPosMax);
 

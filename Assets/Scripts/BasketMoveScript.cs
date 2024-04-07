@@ -32,7 +32,7 @@ public class BasketMoveScript : MonoBehaviour
         }
         else
         {
-            Debug.Log("Done!");
+            //Debug.Log("Done!");
             timerDone = true;
         }
 

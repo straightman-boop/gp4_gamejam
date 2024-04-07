@@ -109,5 +109,18 @@ public class PlayerMovementScript : MonoBehaviour
          transform.Rotate(0f, 180f, 0);
     }
 
+    public IEnumerator Blink(GameObject obj)
+    {
+        Renderer objRenderer = obj.GetComponent<Renderer>();
+        objRenderer.enabled = true;
+        yield return new WaitForSeconds(0.1f);
 
+        for (int i = 0; i < 1; i++)
+        {
+            objRenderer.enabled = false;
+            yield return new WaitForSeconds(0.1f);
+            objRenderer.enabled = true;
+            yield return new WaitForSeconds(2f);
+        }
+    }
 }
