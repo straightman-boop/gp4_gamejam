@@ -872,7 +872,7 @@ GameObject:
   - component: {fileID: 605558280}
   m_Layer: 0
   m_Name: RottenFood
-  m_TagString: Untagged
+  m_TagString: rottenFood
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1026,7 +1026,7 @@ GameObject:
   - component: {fileID: 612969161}
   m_Layer: 0
   m_Name: FineFood
-  m_TagString: Untagged
+  m_TagString: fineFood
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1657,9 +1657,11 @@ GameObject:
   - component: {fileID: 859650095}
   - component: {fileID: 859650094}
   - component: {fileID: 859650093}
+  - component: {fileID: 859650098}
+  - component: {fileID: 859650099}
   m_Layer: 6
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1827,6 +1829,32 @@ Transform:
   - {fileID: 432730381}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &859650098
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 859650092}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 908bb20f92516d74bb4e26a4137760ee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &859650099
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 859650092}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24e31823e923c9c4abc287f1bb26b2ad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  freshFoodStored: 0
+  rottenFoodStored: 0
 --- !u!1 &875162242
 GameObject:
   m_ObjectHideFlags: 0
