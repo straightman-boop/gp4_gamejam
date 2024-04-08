@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class canvasManager : MonoBehaviour
 {
@@ -31,19 +32,19 @@ public class canvasManager : MonoBehaviour
             }
         }
 
-        if(Input.GetKeyDown(KeyCode.I))
+        if (Input.GetKeyDown(KeyCode.I))
         {
-            if(!isPaused)
+            if (!isPaused)
             {
-                isInventory= !isInventory;
-                if(isInventory)
+                isInventory = !isInventory;
+                if (isInventory)
                 {
                     Time.timeScale = 0;
                     menuManager.inventory.SetActive(true);
                 }
                 else
                 {
-                    Time.timeScale= 1;
+                    Time.timeScale = 1;
                     menuManager.inventory.SetActive(false);
                 }
             }
@@ -64,5 +65,22 @@ public class canvasManager : MonoBehaviour
     public void closeContainer()
     {
         menuManager.containers.SetActive(false);
+    }
+
+    public void quit()
+    {
+        Application.Quit();
+    }
+
+    public void nextLife()
+    {
+        string index = SceneManager.GetActiveScene().buildIndex.ToString();
+        int num = int.Parse(index);
+
+        num++;
+
+
+        Time.timeScale = 1;
+        SceneManager.LoadScene(num);
     }
 }

@@ -32,10 +32,15 @@ public class PlayerInteractionScript : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        if (interact.gameObject.activeSelf)
+        if (interact.gameObject != null)
         {
-            interact.gameObject.SetActive(false);
+            if (interact.gameObject.activeSelf)
+            {
+                interact.gameObject.SetActive(false);
+            }
         }
+
+        
         
     }
 }
